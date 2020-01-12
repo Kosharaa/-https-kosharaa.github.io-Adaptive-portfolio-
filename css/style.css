@@ -1,0 +1,368 @@
+*{
+	margin: 0; /*внешний отступ*/
+	padding: 0; /* внутренний отступ*/
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	text-decoration: none;
+	list-style: : none;
+}
+
+body{
+font-family: 'Raleway', sans-serif;
+
+}
+.logo{
+	background: #000;
+	width: 100%;
+	display: flex; /* Флекс боксы (почитать еще свойства)*/
+	justify-content: center; /* выравнивание елемента по горизонтали*/
+	
+}
+
+.graficLogo{
+	padding: 5px;
+	max-width: 100%;
+	box-sizing: border-box; /*подгоняет размер сайта под размер окна. Разобраться*/
+}
+
+nav{
+	margin: auto;
+	width: 800px;
+	height: 50px;
+}
+.topnav{
+	background-color: : #fff;
+	font-size: 14px;
+	margin-top: 40px;
+}
+.topnav a{
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 15px;
+}
+.topnav a:hover{
+	border-bottom: 2px solid #000;
+}
+.topnav .icon{
+	display: none;
+}
+/*Делаем изображение адаптивным*/
+.mw100{
+	max-width: 100%;
+}
+.advantages_container{
+	display: flex;
+	justify-content: center;
+}
+/*выравниваем меин*/
+.advantages{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.advantages_item{
+	width: 30%;
+}
+footer{
+	width: 100%;
+	height: auto;
+	background: #000;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+	/*
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	*/
+}
+footer a{
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+}
+footer p{
+	color: white;
+}
+footer nav a:hover{
+	border-bottom: 1px solid white;
+}
+.social img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover{
+	background: red;
+	border-radius: 50%;
+}
+.gallery{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+.photo-item{
+	width: 25%;
+}
+.photo-item img{
+	box-sizing: border-box;
+	max-width: 100%;
+	opacity: 0.7;
+}
+.photo-item img:hover{
+	opacity: 1;
+}
+/*REM едидиница измерения созданная чтоб облегчить вычислительные проблеммы, которая равна базовым значениям фонт-сайз*/
+.blogContainer{
+	background: #fafafa;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.2) 0 4px 2px -2px;
+	font-weight: 100;
+	margin: 48px auto;
+	width: 50rem;
+}
+.blogContainer a:hover{
+	border-color: #ff4d4d;
+	color: #ff4d4d;
+}
+.blogCover{
+	background: url(../img/maxresdefault.jpg);
+	background-size: cover;
+	border-radius: 5px 5px  0 0;
+	height: 15rem;
+	box-shadow: inset rgba(0,0,0,0.2)0 64px 64px 16px;
+}	
+.blogBody{
+	margin: 0 auto;
+	width: 80%;
+}
+.blogTitle h1 a{
+	color: #333;
+	font-weight: 100;
+}
+.blogText p{
+	color: #4d4d4d; 
+}
+.blogTags ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	padding-left: 0; 
+}
+.blogTags li + li{
+	margin-left: .5rem;
+}
+.blogTags a{
+	border: 1px solid #999999;
+	border-radius: 3px;
+	color: #999999;
+	font-size: .75rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	letter-spacing: 1px;
+	padding: 0 .5rem;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	width: 5rem;
+}
+.blogFooter{
+	border-top: 1px solid #e6e6e6;
+	margin: 0 auto;
+	padding-bottom: .125rem;
+	width: 80%; 
+}
+.blogFooter ul{
+	list-style: none;
+	display: flex;
+	flex: row wrap;
+	justify-content: flex-end;
+	padding-left: 0;
+}
+.blogFooter li{
+	color: #999999;
+	font-size: .75rem;
+	height: 1.5rem;
+	text-align: center;
+	line-height: 1.5rem;
+	text-transform: uppercase;
+	position: relative;
+	white-space: nowrap;
+}
+.publishedDate{
+	border: 1px solid #999999;
+	border-radius: 3px;
+	padding: 0 .5rem;
+}
+#map{
+	width: 100%;
+	height: 500px;
+}
+.form{
+	width: 50%;
+	margin: 50px auto;
+}
+.feedbackInput{
+	color: #000;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+	background-color: #fff;
+	padding: 13px;
+	margin-bottom: 10px;
+	width: 100%;bsz
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 0px solid transparent;
+	border-bottom: 1px solid #000;
+}
+textarea{
+	width: 100%;
+	height: 150px;
+	resize: vertical;
+}
+.buttonSubmit{
+	float: left;
+	width: 100%;
+	border: 0px solid transparent;
+	cursor: pointer;
+	background-color: #000;
+	color: white;
+	font-size: 18px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 300;
+}
+.buttonSubmit:hover{
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
+.easy{
+	width: 0;
+	height: 74px;
+	background-color: #fbfbfb;
+	transition: .3s ease;
+}
+.aboutCont{
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+
+}
+.aboutCont img{
+	max-width: 100%;	
+}
+.aboutCont p{
+	margin-top: 50px;
+}
+.aboutCont h1{
+	margin-top: 40px;
+}
+.services{
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+}
+.services img{
+	max-width: 100%;
+}
+.servicesCont{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px 100px;
+}
+.servicesContBlock
+
+
+
+
+
+
+
+
+
+/*делаем адаптивность для меню НАВ */
+@media screen and (max-width: 768px){
+	.topnav a:not(:first-child){
+		display: none; /*сделали иконку хоум видимой при сворачивании*/
+	}	
+	.topnav a.icon{
+		float: right;
+		margin-top: -17px;
+		display: block;
+		color: #000;
+	}	
+	nav{
+		width: 100%;
+		/*height: 100px;  сделали высоту и ширину блока нав. почему тут - надо понять */
+	}
+	.topnav.responsive{
+		position: relative;
+	}
+	.topnav.responsive a.icon{
+		position: absolute;
+		right: 0;
+		top: 0;		
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.advantages_item{
+		width: 45%;
+	}
+	.photo-item{
+		width: 45%;
+		margin-left: 10px;
+	}
+	.blogContainer{
+		width: 28rem;
+	}
+}
+@media screen and (max-width: 420px){
+	.advantages{
+		flex-direction: column;
+	}
+	.advantages_item{
+		width: 100%;
+	}
+	.project{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.gallery{
+		width: auto;
+		margin: auto;
+	}
+	.photo-item{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.blogContainer{
+		width: 20rem;
+	}
+	.servicesCont{
+	
+	grid-template-columns: auto;
+	grid-gap: 50px 100px;
+}
+}
